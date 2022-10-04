@@ -10,3 +10,96 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    background-color: #333;
+    color: #999;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    letter-spacing: 6px;
+    margin-top: 4rem;
+}
+
+#orbit {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #555;
+    position: relative;
+    border-radius: 50%;
+    animation-name: rotate;
+    animation-duration: 24s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#sun {
+    width: 60px;
+    height: 60px;
+    background-color: #fc0;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    border-radius: 50%;
+}
+
+#earth {
+    width: 28px;
+    height: 28px;
+    background-color: #00baff;
+    position: absolute;
+    left: 16px;
+    top: 164px;
+    border-radius: 50%;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moon {
+    width: 12px;
+    height: 12px;
+    background-color: #999;
+    position: absolute;
+    left: 8px;
+    top: -28px;
+    border-radius: 50%;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+section {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#spring {
+    background-image: url(media/spring.jpg);
+}
+
+#summer {
+    background-image: url(media/summer.jpg);
+}
+
+#autumn {
+    background-image: url(media/autumn.jpg);
+}
+
+#winter {
+    background-image: url(media/winter.jpg);
+}
